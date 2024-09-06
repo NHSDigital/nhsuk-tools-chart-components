@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chart Legend renders content as expected 1`] = `
+<div>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="nhsuk-card nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-3 nhsuk-u-secondary-text-color nhsuk-body-s nhsuk-u-padding-3 nhsuk-chart-legend-card"
+    >
+      <div
+        class="nhsuk-chart-legend-key-wrapper legend-wrapper"
+      >
+        <div
+          class="nhsuk-chart-legend-key "
+        />
+        Key One
+      </div>
+      <div
+        class="nhsuk-chart-legend-key-wrapper "
+      >
+        <div
+          class="nhsuk-chart-legend-key key-two-class"
+        />
+        Key Two
+      </div>
+      <div
+        class="nhsuk-chart-legend-key-wrapper "
+      >
+        <div
+          class="nhsuk-chart-legend-key "
+        >
+          <span>
+            Key three element
+          </span>
+        </div>
+        Key Three
+      </div>
+    </div>
+  </div>
+</div>
+`;

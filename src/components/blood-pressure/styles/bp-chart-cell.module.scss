@@ -1,0 +1,15 @@
+.nhsuk-bp-graph-cell {
+  flex-grow: 1;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  background: transparent;
+  z-index: 4;
+}
+
+.nhsuk-bp-first-in-column {
+  border-bottom: none;
+}
+
+.nhsuk-bp-first-in-row {
+  border-left: none;
+}

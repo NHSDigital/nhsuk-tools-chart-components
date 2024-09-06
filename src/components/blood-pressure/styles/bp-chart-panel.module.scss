@@ -1,0 +1,42 @@
+@import './bp-chart.config.module.scss';
+
+#nhsuk-bp-chart {
+  & > figure {
+    margin: 0;
+  }
+}
+
+.nhsuk-bp-legend-key-wrapper {
+  display: flex;
+  &:last-child {
+    margin-top: 5px;
+  }
+}
+
+.nhsuk-bp-legend-display-card {
+  margin-top: 50px;
+  max-width: 300px;
+}
+
+.nhsuk-bp-legend-key-classification-low {
+  @extend %bp-classification-low;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.nhsuk-bp-legend-key-classification-healthy {
+  @extend %bp-classification-healthy;
+}
+
+.nhsuk-bp-legend-key-classification-slightlyraised {
+  @extend %bp-classification-slightlyraised;
+}
+
+.nhsuk-bp-legend-key-classification-high {
+  @extend %bp-classification-high;
+}
+
+.nhsuk-bp-legend-key-marker {
+  border-bottom: none;
+  box-shadow: none;
+}

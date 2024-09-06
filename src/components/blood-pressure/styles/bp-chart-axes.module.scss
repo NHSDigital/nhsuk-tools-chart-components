@@ -1,0 +1,63 @@
+@import '../../styles/mixins.module.scss';
+
+%bp-axis-marker {
+  position: absolute;
+  outline: 0.5px solid black;
+}
+
+%bp-axis-label {
+  position: absolute;
+}
+
+.nhsuk-bp-systolic-axis-marker {
+  @extend %bp-axis-marker;
+  width: 5px;
+  left: -5px;
+  &:first-child {
+    bottom: -1px !important;
+  }
+  &:last-child {
+    bottom: calc(100% + 1px) !important;
+  }
+}
+
+.nhsuk-bp-diastolic-axis-marker {
+  @extend %bp-axis-marker;
+  height: 5px;
+  bottom: -5px;
+  &:first-child {
+    left: -1px !important;
+  }
+  &:last-child {
+    left: calc(100% + 1px) !important;
+  }
+}
+
+.nhsuk-bp-diastolic-axis-marker-85 {
+  @include up-to-width(450px) {
+    display: none;
+  }
+}
+
+.nhsuk-bp-diastolic-axis-marker-90 {
+  display: none;
+  @include up-to-width(450px) {
+    display: block;
+  }
+}
+
+.nhsuk-bp-systolic-axis-label {
+  @extend %bp-axis-label;
+  left: -30px;
+  top: -10px;
+  width: 26px;
+  text-align: end;
+}
+
+.nhsuk-bp-diastolic-axis-label {
+  @extend %bp-axis-label;
+  bottom: -25px;
+  left: -10px;
+  width: 20px;
+  text-align: center;
+}

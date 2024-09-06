@@ -1,0 +1,27 @@
+%bp-classification-low {
+  background: #330072;
+}
+
+%bp-classification-healthy {
+  background: repeating-linear-gradient(
+    -45deg,
+    #59c3bc,
+    #59c3bc 4.5px,
+    #33b6ad 4.5px,
+    #33b6ad 9px
+  );
+}
+
+%bp-classification-slightlyraised {
+  background: #ffb81c;
+}
+
+%bp-classification-high {
+  background: repeating-linear-gradient(
+    45deg,
+    #e1746b,
+    #e1746b 4.5px,
+    #dd5349 4.5px,
+    #dd5349 9px
+  );
+}

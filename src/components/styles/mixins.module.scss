@@ -1,0 +1,26 @@
+@use 'sass:map';
+@import 'nhsuk-frontend/packages/core/settings/_breakpoints.scss';
+
+@mixin up-to-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin for-small-mobile {
+  @media (max-width: map-get($mq-breakpoints, mobile)) {
+    @content;
+  }
+}
+
+@mixin for-mobile {
+  @media (min-width: map-get($mq-breakpoints, mobile)) and (max-width: map-get($mq-breakpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin up-to-tablet {
+  @media (max-width: map-get($mq-breakpoints, tablet)) {
+    @content;
+  }
+}

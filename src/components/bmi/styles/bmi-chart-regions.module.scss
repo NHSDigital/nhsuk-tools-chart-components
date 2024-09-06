@@ -1,0 +1,39 @@
+@import '../../styles/mixins.module.scss';
+@import './bmi-chart.config.module.scss';
+
+%bmi-region {
+  position: absolute;
+  bottom: 0%;
+  outline: $bmi-graph-outline;
+  border-right: $bmi-graph-outline;
+  box-shadow: -1px 0px white inset, 2px 0px white, 0px -2px white;
+  height: $bmi-graph-height-desktop;
+  @include for-mobile {
+    height: $bmi-graph-height-mobile;
+  }
+}
+
+.nhsuk-bmi-classification-underweight {
+  @extend %bmi-region;
+  @extend %bmi-classification-underweight;
+  z-index: 3;
+}
+
+.nhsuk-bmi-classification-healthy {
+  @extend %bmi-region;
+  @extend %bmi-classification-healthy;
+  z-index: 2;
+}
+
+.nhsuk-bmi-classification-overweight {
+  @extend %bmi-region;
+  @extend %bmi-classification-overweight;
+  z-index: 1;
+}
+
+.nhsuk-bmi-classification-obese {
+  @extend %bmi-region;
+  @extend %bmi-classification-obese;
+  border-right: none;
+  box-shadow: none;
+}

@@ -1,0 +1,21 @@
+@import '../../styles/mixins.module.scss';
+
+$bmi_sizes: (
+  'default': 24px,
+  'mobile': 20px,
+);
+
+@mixin chart-marker-size($size) {
+  height: $size;
+  width: $size;
+  margin: 2px 0 calc(-1 * ($size) / 2) calc(-1 * ($size) / 2);
+}
+
+.nhsuk-bmi-chart-marker {
+  position: absolute;
+  z-index: 4;
+  @include chart-marker-size(map-get($bmi_sizes, 'default'));
+  @include for-mobile {
+    @include chart-marker-size(map-get($bmi_sizes, 'mobile'));
+  }
+}
