@@ -1,0 +1,48 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Welcome" />
+
+# NHS.UK Tools Chart Components
+
+## Installation
+
+You can install this package using `npm`.
+
+```bash
+npm install --save nhsuk-tools-chart-components
+```
+
+## Usage
+
+```jsx
+import React from 'react';
+
+// You can import components from the global module
+import { ChildBmiChart } from 'nhsuk-tools-chart-components/react';
+
+function GetChildBmiChart() {
+  return (
+    <ChildBmiChart
+      classificationBounds={{
+        lower: 0,
+        upper: {
+          [BaseClassifications.Underweight]: {
+            value: 2,
+            label: '2',
+          },
+          [BaseClassifications.Healthy]: {
+            value: 91,
+            label: '91',
+          },
+          [BaseClassifications.Overweight]: {
+            value: 100,
+            label: '100',
+          },
+        },
+      }}
+      centile={{ value: 1, label: 'Below 2' }}
+      markerText={markerText}
+    />
+  );
+}
+```

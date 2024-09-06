@@ -38,3 +38,7 @@ owasp/report.html
 
 # gitleaks
 gitleaks-report.json
+
+# Custom
+storybook-static/
+*storybook.log

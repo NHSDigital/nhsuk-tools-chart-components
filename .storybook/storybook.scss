@@ -1,0 +1,15 @@
+// Allow current nhsuk styles to override legacy
+@import '../node_modules/nhsuk-frontend/packages/nhsuk.scss';
+
+.tag-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  & > .nhsuk-tag {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import { Card } from 'nhsuk-react-components';
 import './styles/chart-legend.scss';
 

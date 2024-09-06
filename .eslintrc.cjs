@@ -46,7 +46,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.test.*'],
+      files: ['*.test.*', '*.stories.tsx'],
       rules: {
         'sonarjs/no-identical-functions': 'off',
       },

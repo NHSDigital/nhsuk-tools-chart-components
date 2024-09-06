@@ -15,3 +15,7 @@ Ensure you have Node.js 20.x.x. installed. Usage of NVM is recommended, to allow
 ## Build
 
 `npm run build` will build the project.
+
+## Build storybook
+
+`npm run storybook` will build and deploy the storybook locally in `http://localhost:6006/`

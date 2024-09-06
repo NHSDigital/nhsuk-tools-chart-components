@@ -24,6 +24,6 @@
       "@tests/*": ["./src/__tests__/*"]
     }
   },
-  "include": ["src", "index.d.ts"],
+  "include": ["src", "index.d.ts", "stories"],
   "exclude": ["node_modules", "dist"]
 }
