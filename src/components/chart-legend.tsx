@@ -41,10 +41,10 @@ function ChartLegendKeyComponent({
 function ChartLegendBorderedComponent({
   legendKeys,
   className,
-}: {
+}: Readonly<{
   legendKeys: ChartLegendKey[];
   className: string;
-}): JSX.Element {
+}>): JSX.Element {
   return (
     <Card className={`${className} nhsuk-u-padding-3 nhsuk-chart-legend-card`}>
       {legendKeys.map((legendKey) => (
@@ -63,10 +63,10 @@ function ChartLegendBorderedComponent({
 function ChartLegendBorderlessComponent({
   legendKeys,
   className,
-}: {
+}: Readonly<{
   legendKeys: ChartLegendKey[];
   className: string;
-}): JSX.Element {
+}>): JSX.Element {
   return (
     <div className={className}>
       {legendKeys.map((legendKey) => (

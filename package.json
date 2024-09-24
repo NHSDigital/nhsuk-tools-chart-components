@@ -24,7 +24,13 @@
   "files": [
     "dist"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NHSDigital/nhsuk-tools-chart-components.git"
+  },
+  "author": {
+       "name": "NHS England"
+  },
   "license": "MIT",
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
