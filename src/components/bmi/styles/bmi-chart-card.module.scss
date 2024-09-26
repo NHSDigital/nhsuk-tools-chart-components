@@ -1,0 +1,24 @@
+@import './bmi-chart.config.module.scss';
+
+.nhsuk-bmi-legend-key-classification-underweight {
+  @extend %bmi-classification-underweight;
+}
+
+.nhsuk-bmi-legend-key-classification-healthy {
+  @extend %bmi-classification-healthy;
+}
+
+.nhsuk-bmi-legend-key-classification-overweight {
+  @extend %bmi-classification-overweight;
+}
+
+.nhsuk-bmi-legend-key-classification-obese {
+  @extend %bmi-classification-obese;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.nhsuk-bmi-legend-key-marker {
+  border-bottom: none;
+  box-shadow: none;
+}

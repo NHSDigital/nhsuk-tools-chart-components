@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Child Bmi result chart component Renders with the expected content 1`] = `
+<div>
+  <div
+    aria-hidden="true"
+    class="nhsuk-cbmi-graph nhsuk-u-margin-bottom-9 "
+  >
+    <div
+      class="nhsuk-cbmi-axis-marker"
+      style="left: 8%;"
+    >
+      <div
+        class="nhsuk-font-size-16 nhsuk-cbmi-axis-marker-label"
+      >
+        2
+      </div>
+    </div>
+    <div
+      class="nhsuk-cbmi-axis-marker"
+      style="left: 80%;"
+    >
+      <div
+        class="nhsuk-font-size-16 nhsuk-cbmi-axis-marker-label"
+      >
+        91
+      </div>
+    </div>
+    <div>
+      <div
+        class="nhsuk-cbmi-chart-arrow-marker"
+        style="left: 4%;"
+      >
+        <div
+          class="nhsuk-cbmi-chart-label-marker"
+        >
+          <div
+            class="nhsuk-u-font-size-19 nhsuk-cbmi-chart-label-align-left"
+          >
+            The centile:
+            <span
+              class="nhsuk-cbmi-chart-centile-marker"
+            >
+              Below 2
+            </span>
+          </div>
+        </div>
+        <svg
+          fill="none"
+          viewBox="0 0 12 12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+      <div
+        class="nhsuk-cbmi-chart-axis-marker"
+        style="left: 4%;"
+      />
+    </div>
+    <div
+      class="nhsuk-cbmi-classification-underweight"
+      style="width: 8%;"
+    />
+    <div
+      class="nhsuk-cbmi-classification-healthy"
+      style="width: 80%;"
+    />
+    <div
+      class="nhsuk-cbmi-classification-overweight"
+      style="width: 100%;"
+    />
+  </div>
+</div>
+`;

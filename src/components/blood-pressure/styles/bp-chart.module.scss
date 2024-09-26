@@ -1,0 +1,53 @@
+@import '../../styles/mixins.module.scss';
+
+.nhsuk-bp-graph {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  outline: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  @include for-small-mobile {
+    height: 225px;
+  }
+  @include for-mobile {
+    height: 275px;
+  }
+}
+
+.nhsuk-bp-graph-row {
+  flex-grow: 1;
+  display: flex;
+}
+
+.nhsuk-bp-systolic-legend-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.nhsuk-bp-diastolic-legend-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+  padding-left: 18px;
+}
+
+%bp-legend-marker {
+  height: 16px;
+  margin-right: 5px;
+  border-left: 2px solid black;
+}
+
+.nhsuk-bp-systolic-legend-marker {
+  @extend %bp-legend-marker;
+  width: 40px;
+  border-top: 2px solid black;
+}
+
+.nhsuk-bp-diastolic-legend-marker {
+  @extend %bp-legend-marker;
+  width: 20px;
+  border-bottom: 2px solid black;
+}

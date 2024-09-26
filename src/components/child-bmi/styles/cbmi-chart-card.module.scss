@@ -1,0 +1,39 @@
+@import './cbmi-chart.config.module.scss';
+
+.nhsuk-cbmi-legend-key-classification-underweight {
+  @extend %cbmi-classification-underweight;
+  @extend .nhsuk-cbmi-legend-key;
+}
+
+.nhsuk-cbmi-legend-key-classification-healthy {
+  @extend %cbmi-classification-healthy;
+  @extend .nhsuk-cbmi-legend-key;
+}
+
+.nhsuk-cbmi-legend-key-classification-overweight {
+  @extend %cbmi-classification-overweight;
+  @extend .nhsuk-cbmi-legend-key;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.nhsuk-cbmi-legend-key {
+  border-bottom: 2px solid white;
+  margin-bottom: 2px;
+}
+
+.nhsuk-cbmi-legend-marker {
+  margin-bottom: 2px;
+}
+
+.nhsuk-cbmi-classification-underweight-heading {
+  border-left: 8px solid $cbmi-underweight-color;
+}
+
+.nhsuk-cbmi-classification-healthy-heading {
+  border-left: 8px solid $cbmi-healthy-color;
+}
+
+.nhsuk-cbmi-classification-overweight-heading {
+  border-left: 8px solid $cbmi-overweight-color;
+}

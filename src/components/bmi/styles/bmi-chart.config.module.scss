@@ -1,0 +1,32 @@
+$bmi-graph-height-desktop: 28px;
+$bmi-graph-height-mobile: 24px;
+
+$bmi-graph-outline: 1px solid black;
+
+%bmi-classification-underweight {
+  background: #330072;
+}
+
+%bmi-classification-healthy {
+  background: repeating-linear-gradient(
+    -45deg,
+    #30b4ab,
+    #30b4ab 4.5px,
+    #00a499 4.5px,
+    #00a499 9px
+  );
+}
+
+%bmi-classification-overweight {
+  background: #ffb81c;
+}
+
+%bmi-classification-obese {
+  background: repeating-linear-gradient(
+    45deg,
+    #da5147,
+    #da5147 4.5px,
+    #d5281b 4.5px,
+    #d5281b 9px
+  );
+}

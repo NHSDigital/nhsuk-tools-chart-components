@@ -1,0 +1,64 @@
+@import '../../styles/mixins.module.scss';
+@import './cbmi-chart.config.module.scss';
+
+$cbmi_sizes: (
+  'default': 16px,
+  'mobile': 12px,
+);
+
+@mixin chart-arrow-marker-size($size) {
+  height: $size;
+  width: $size;
+  margin: -8px 0 calc(-1 * ($size) / 2) calc(-1 * ($size) / 2);
+}
+
+.nhsuk-cbmi-chart-arrow-marker {
+  position: absolute;
+  z-index: 4;
+  @include chart-arrow-marker-size(map-get($cbmi_sizes, 'default'));
+  @include for-mobile {
+    @include chart-arrow-marker-size(map-get($cbmi_sizes, 'mobile'));
+  }
+}
+
+.nhsuk-cbmi-chart-label-align-left {
+  display: flex;
+  justify-content: left;
+}
+
+.nhsuk-cbmi-chart-label-align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.nhsuk-cbmi-chart-label-align-right {
+  display: flex;
+  justify-content: right;
+}
+
+.nhsuk-cbmi-chart-label-marker {
+  position: relative;
+  height: 25;
+  width: auto;
+  white-space: nowrap;
+  margin-top: -30px;
+  z-index: 4;
+}
+
+.nhsuk-cbmi-chart-centile-marker {
+  position: relative;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.nhsuk-cbmi-chart-axis-marker {
+  position: absolute;
+  margin-left: -1px;
+  border: 1.5px solid black;
+  box-shadow: 0px 0px white inset, 2px 0px white, -2px 0px white;
+  z-index: 4;
+  height: $cbmi-graph-height-desktop;
+  @include for-mobile {
+    height: $cbmi-graph-height-mobile;
+  }
+}

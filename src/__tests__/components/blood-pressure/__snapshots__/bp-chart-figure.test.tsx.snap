@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Blood pressure chart figure component Renders with the expected content 1`] = `
+<div>
+  <figure
+    class="nhsuk-u-margin-0"
+  >
+    <figcaption
+      class="nhsuk-u-visually-hidden"
+    >
+      Blood Pressure figure description
+    </figcaption>
+    <div
+      class="nhsuk-body-s"
+    >
+      <div
+        aria-hidden="true"
+        class="nhsuk-bp-systolic-legend-wrapper"
+      >
+        <div
+          class="nhsuk-bp-systolic-legend-marker"
+        />
+        <span>
+          Systolic (high number)
+        </span>
+      </div>
+      <div
+        aria-hidden="true"
+        class="nhsuk-bp-graph"
+      >
+        <div>
+          <div
+            class="nhsuk-bp-systolic-axis-marker nhsuk-bp-systolic-axis-marker-70"
+            style="bottom: 0%;"
+          >
+            <div
+              class="nhsuk-bp-systolic-axis-label"
+            >
+              70
+            </div>
+          </div>
+          <div
+            class="nhsuk-bp-systolic-axis-marker nhsuk-bp-systolic-axis-marker-90"
+            style="bottom: 18.181818181818183%;"
+          >
+            <div
+              class="nhsuk-bp-systolic-axis-label"
+            >
+              90
+            </div>
+          </div>
+          <div
+            class="nhsuk-bp-systolic-axis-marker nhsuk-bp-systolic-axis-marker-120"
+            style="bottom: 45.45454545454545%;"
+          >
+            <div
+              class="nhsuk-bp-systolic-axis-label"
+            >
+              120
+            </div>
+          </div>
+          <div
+            class="nhsuk-bp-systolic-axis-marker"
+            style="bottom: 63.63636363636363%;"
+          >
+            <div
+              class="nhsuk-bp-systolic-axis-label"
+            >
+              140
+            </div>
+          </div>
+          <div
+            class="nhsuk-bp-systolic-axis-marker nhsuk-bp-systolic-axis-marker-180"
+            style="bottom: 100%;"
+          >
+            <div
+              class="nhsuk-bp-systolic-axis-label"
+            >
+              180
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="nhsuk-bp-diastolic-axis-marker nhsuk-bp-diastolic-axis-marker-40"
+            style="left: 0%;"
+          >
+            <div
+              class="nhsuk-bp-diastolic-axis-label"
+            >
+              40
+            </div>
+          </div>
+          <div
+            class="nhsuk-bp-diastolic-axis-marker nhsuk-bp-diastolic-axis-marker-60"
+            style="left: 25%;"
+          >
+            <div
+              class="nhsuk-bp-diastolic-axis-label"
+            >
+              60
+            </div>
+          </div>
+          <div
+            class="nhsuk-bp-diastolic-axis-marker nhsuk-bp-diastolic-axis-marker-80"
+            style="left: 50%;"
+          >
+            <div
+              class="nhsuk-bp-diastolic-axis-label"
+            >
+              80
+            </div>
+          </div>
+          <div
+            class="nhsuk-bp-diastolic-axis-marker"
+            style="left: 62.5%;"
+          >
+            <div
+              class="nhsuk-bp-diastolic-axis-label"
+            >
+              90
+            </div>
+          </div>
+          <div
+            class="nhsuk-bp-diastolic-axis-marker nhsuk-bp-diastolic-axis-marker-120"
+            style="left: 100%;"
+          >
+            <div
+              class="nhsuk-bp-diastolic-axis-label"
+            >
+              120
+            </div>
+          </div>
+        </div>
+        <div
+          class="nhsuk-bp-graph-marker"
+          style="left: 50%; bottom: 63.6%;"
+        >
+          <svg
+            fill="none"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              clip-path="url(#clip0_1346_102759)"
+            >
+              <path
+                d="M5.18718 8.36931L4.48008 9.07641L5.18718 9.78352L11.3744 15.9707L5.18718 22.1579L4.48008 22.865L5.18718 23.5721L8.36916 26.7541L9.07627 27.4612L9.78338 26.7541L15.9706 20.5669L22.1577 26.7541L22.8649 27.4612L23.572 26.7541L26.7539 23.5721L27.461 22.865L26.7539 22.1579L20.5668 15.9707L26.7539 9.78352L27.461 9.07641L26.7539 8.36931L23.572 5.18732L22.8649 4.48022L22.1577 5.18732L15.9706 11.3745L9.78338 5.18732L9.07627 4.48022L8.36916 5.18732L5.18718 8.36931Z"
+                fill="black"
+                stroke="white"
+                stroke-width="2"
+              />
+            </g>
+          </svg>
+        </div>
+        <div
+          class="nhsuk-bp-classification-0"
+          style="width: 25%; height: 18.181818181818183%;"
+        />
+        <div
+          class="nhsuk-bp-classification-1"
+          style="width: 50%; height: 45.45454545454545%;"
+        />
+        <div
+          class="nhsuk-bp-classification-2"
+          style="width: 62.5%; height: 63.63636363636363%;"
+        />
+        <div
+          class="nhsuk-bp-classification-3"
+          style="width: 100%; height: 100%;"
+        />
+        <div
+          class="nhsuk-bp-graph-row"
+        >
+          <div
+            class="nhsuk-bp-graph-cell nhsuk-bp-first-in-row nhsuk-bp-first-in-column"
+          />
+          <div
+            class="nhsuk-bp-graph-cell nhsuk-bp-first-in-column"
+          />
+          <div
+            class="nhsuk-bp-graph-cell nhsuk-bp-first-in-column"
+          />
+          <div
+            class="nhsuk-bp-graph-cell nhsuk-bp-first-in-column"
+          />
+          <div
+            class="nhsuk-bp-graph-cell nhsuk-bp-first-in-column"
+          />
+          <div
+            class="nhsuk-bp-graph-cell nhsuk-bp-first-in-column"
+          />
+        </div>
+        <div
+          class="nhsuk-bp-region-boundary"
+          style="width: 25%; height: 18.181818181818183%;"
+        />
+        <div
+          class="nhsuk-bp-region-boundary"
+          style="width: 50%; height: 45.45454545454545%;"
+        />
+        <div
+          class="nhsuk-bp-region-boundary"
+          style="width: 62.5%; height: 63.63636363636363%;"
+        />
+      </div>
+      <div
+        aria-hidden="true"
+        class="nhsuk-bp-diastolic-legend-wrapper"
+      >
+        <div
+          class="nhsuk-bp-diastolic-legend-marker"
+        />
+        <span>
+          Diastolic (low number)
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+    >
+      <div
+        class="nhsuk-card nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-3 nhsuk-u-secondary-text-color nhsuk-body-s nhsuk-u-padding-3 nhsuk-chart-legend-card"
+      >
+        <div
+          class="nhsuk-chart-legend-key-wrapper "
+        >
+          <div
+            class="nhsuk-chart-legend-key nhsuk-bp-legend-key-classification-high"
+          />
+          High
+        </div>
+        <div
+          class="nhsuk-chart-legend-key-wrapper "
+        >
+          <div
+            class="nhsuk-chart-legend-key nhsuk-bp-legend-key-classification-slightlyraised"
+          />
+          Slightly raised
+        </div>
+        <div
+          class="nhsuk-chart-legend-key-wrapper "
+        >
+          <div
+            class="nhsuk-chart-legend-key nhsuk-bp-legend-key-classification-healthy"
+          />
+          healthy
+        </div>
+        <div
+          class="nhsuk-chart-legend-key-wrapper "
+        >
+          <div
+            class="nhsuk-chart-legend-key nhsuk-bp-legend-key-classification-low"
+          />
+          low
+        </div>
+        <div
+          class="nhsuk-chart-legend-key-wrapper "
+        >
+          <div
+            class="nhsuk-chart-legend-key nhsuk-bp-legend-key-marker"
+          >
+            <svg
+              fill="none"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                clip-path="url(#clip0_1346_102759)"
+              >
+                <path
+                  d="M5.18718 8.36931L4.48008 9.07641L5.18718 9.78352L11.3744 15.9707L5.18718 22.1579L4.48008 22.865L5.18718 23.5721L8.36916 26.7541L9.07627 27.4612L9.78338 26.7541L15.9706 20.5669L22.1577 26.7541L22.8649 27.4612L23.572 26.7541L26.7539 23.5721L27.461 22.865L26.7539 22.1579L20.5668 15.9707L26.7539 9.78352L27.461 9.07641L26.7539 8.36931L23.572 5.18732L22.8649 4.48022L22.1577 5.18732L15.9706 11.3745L9.78338 5.18732L9.07627 4.48022L8.36916 5.18732L5.18718 8.36931Z"
+                  fill="black"
+                  stroke="white"
+                  stroke-width="2"
+                />
+              </g>
+            </svg>
+          </div>
+          Your reading
+        </div>
+      </div>
+    </div>
+  </figure>
+</div>
+`;

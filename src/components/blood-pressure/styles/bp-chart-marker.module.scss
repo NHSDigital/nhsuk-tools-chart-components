@@ -1,0 +1,25 @@
+@import '../../styles/mixins.module.scss';
+
+$bp_sizes: (
+  'default': 24px,
+  'mobile': 22px,
+  'small-mobile': 20px,
+);
+
+@mixin graph-marker-size($size) {
+  height: $size;
+  width: $size;
+  margin: 0 0 calc(-1 * ($size) / 2) calc(-1 * ($size) / 2);
+}
+
+.nhsuk-bp-graph-marker {
+  position: absolute;
+  z-index: 6;
+  @include graph-marker-size(map-get($bp_sizes, 'default'));
+  @include for-small-mobile {
+    @include graph-marker-size(map-get($bp_sizes, 'small-mobile'));
+  }
+  @include for-mobile {
+    @include graph-marker-size(map-get($bp_sizes, 'mobile'));
+  }
+}

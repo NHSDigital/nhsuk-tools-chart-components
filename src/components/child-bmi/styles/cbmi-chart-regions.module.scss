@@ -1,0 +1,30 @@
+@import '../../styles/mixins.module.scss';
+@import './cbmi-chart.config.module.scss';
+
+%cbmi-region {
+  position: absolute;
+  bottom: 0%;
+  outline: $cbmi-graph-outline;
+  height: $cbmi-graph-height-desktop;
+
+  @include for-mobile {
+    height: $cbmi-graph-height-mobile;
+  }
+}
+.nhsuk-cbmi-classification-underweight {
+  @extend %cbmi-region;
+  @extend %cbmi-classification-underweight;
+  z-index: 3;
+}
+
+.nhsuk-cbmi-classification-healthy {
+  @extend %cbmi-region;
+  @extend %cbmi-classification-healthy;
+  z-index: 2;
+}
+
+.nhsuk-cbmi-classification-overweight {
+  @extend %cbmi-region;
+  @extend %cbmi-classification-overweight;
+  z-index: 1;
+}

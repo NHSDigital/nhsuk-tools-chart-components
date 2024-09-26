@@ -1,0 +1,29 @@
+@import './cbmi-chart.config.module.scss';
+@import '../../styles/mixins.module.scss';
+
+$axis-offset: 5px;
+
+@mixin chart-marker-size($size) {
+  height: $size + $axis-offset;
+}
+
+.nhsuk-cbmi-axis-marker {
+  position: absolute;
+  bottom: -5px;
+  margin-left: -0.5px;
+  border: 1px solid black;
+  box-shadow: 0px 0px white inset, 1px 0px white, -1px 0px white;
+  z-index: 4;
+  @include chart-marker-size($cbmi-graph-height-desktop);
+  @include for-mobile {
+    @include chart-marker-size($cbmi-graph-height-mobile);
+  }
+}
+
+.nhsuk-cbmi-axis-marker-label {
+  position: absolute;
+  bottom: -25px;
+  left: -10px;
+  width: 20px;
+  text-align: center;
+}

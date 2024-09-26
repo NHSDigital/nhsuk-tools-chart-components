@@ -1,0 +1,41 @@
+@import './bp-chart.config.module.scss';
+
+.nhsuk-bp-region-boundary {
+  position: absolute;
+  bottom: 0%;
+  outline: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  box-shadow: -1px 1px white inset, 2px 0px white, 0px -2px white,
+    2px -2px white;
+  z-index: 5;
+  background: transparent;
+}
+
+.nhsuk-bp-classification-0 {
+  @extend %bp-classification-low;
+  position: absolute;
+  bottom: 0%;
+  z-index: 3;
+}
+
+.nhsuk-bp-classification-1 {
+  @extend %bp-classification-healthy;
+  position: absolute;
+  bottom: 0%;
+  z-index: 2;
+}
+
+.nhsuk-bp-classification-2 {
+  @extend %bp-classification-slightlyraised;
+  position: absolute;
+  bottom: 0%;
+  z-index: 1;
+}
+
+.nhsuk-bp-classification-3 {
+  @extend %bp-classification-high;
+  position: absolute;
+  bottom: 0%;
+  z-index: 0;
+}
