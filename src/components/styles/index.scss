@@ -1,0 +1,21 @@
+@import '../child-bmi/styles/cbmi-chart.module.scss';
+@import '../child-bmi/styles/cbmi-chart.config.module.scss';
+@import '../child-bmi/styles/cbmi-chart-axes.module.scss';
+@import '../child-bmi/styles/cbmi-chart-card.module.scss';
+@import '../child-bmi/styles/cbmi-chart-marker.module.scss';
+@import '../child-bmi/styles/cbmi-chart-regions.module.scss';
+
+@import '../bmi/styles/bmi-chart.module.scss';
+@import '../bmi/styles/bmi-chart.config.module.scss';
+@import '../bmi/styles/bmi-chart-axes.module.scss';
+@import '../bmi/styles/bmi-chart-card.module.scss';
+@import '../bmi/styles/bmi-chart-marker.module.scss';
+@import '../bmi/styles/bmi-chart-regions.module.scss';
+
+@import '../blood-pressure/styles/bp-chart.module.scss';
+@import '../blood-pressure/styles/bp-chart.config.module.scss';
+@import '../blood-pressure/styles/bp-chart-axes.module.scss';
+@import '../blood-pressure/styles/bp-chart-cell.module.scss';
+@import '../blood-pressure/styles/bp-chart-panel.module.scss';
+@import '../blood-pressure/styles/bp-chart-marker.module.scss';
+@import '../blood-pressure/styles/bp-chart-region-boundaries.module.scss';
