@@ -1,4 +1,3 @@
-export type LowerBound = number;
 export type UpperBoundInequalityMethod = (a: number, b: number) => boolean;
 
 export type UpperBoundValue = {
@@ -12,6 +11,6 @@ export type UpperBounds<TClassificationLevel extends string> = {
 };
 
 export type Bounds<TClassificationLevel extends string> = {
-  lower: LowerBound;
+  lower: number;
   upper: UpperBounds<TClassificationLevel>;
 };
