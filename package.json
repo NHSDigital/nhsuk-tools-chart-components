@@ -1,6 +1,6 @@
 {
   "name": "nhsuk-tools-chart-components",
-  "version": "0.0.1",
+  "version": "0.0.100",
   "description": "",
   "exports": {
     "./react": {
