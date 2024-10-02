@@ -7,6 +7,7 @@ pr:
 resources:
   repositories:
     - repository: templates
+      ref: task/NUT_5701_add_pipeline
       type: git
       name: nhsuk.tools.packages.pipeline.templates
 
