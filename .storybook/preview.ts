@@ -7,7 +7,7 @@ const preview: Preview = {
     actions: { argTypesRegex: '^on[A-Z].*' },
     options: {
       storySort: {
-        order: ['Welcome', 'Charts'],
+        order: ['Welcome', 'Charts', 'Legend'],
       },
     },
   },

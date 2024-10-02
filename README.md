@@ -1,10 +1,12 @@
 # NHS.UK Tools Chart components
 
-This repository contains the code for NHS.UK Chart components - a port of the [NHS.UK Tools Chart components](https://github.com/NHSDigital/nhsuk-tools-chart-components).
+This repository contains the code for NHS.UK Chart components
 
 These chart components are designed for visualizing Body Mass Index (BMI), Child Body Mass Index (CBMI), and Blood Pressure (BP) data.
 
 Initially, these charts were integrated into separate codebases for each of the individual tools. To support consistency and reusability across NHS projects, we have migrated these chart components into a dedicated library.
+
+A storybook instance for the components can be found in `https://tools-graph-components.nhswebsite-dev.nhs.uk/?path=/docs/welcome--docs`
 
 ## Installation
 

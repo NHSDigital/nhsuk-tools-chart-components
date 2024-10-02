@@ -95,7 +95,7 @@ type Story = StoryObj<typeof BpChartFigure>;
  *
  * `diastolic`: A number representing the diastolic blood pressure reading.
  *
- * ### Properties
+ * ### graphLayout
  * The layout layout provides a structure for organizing the chart's elements, including the labels for the axes and the grid layout of the chart area.
  *
  * `systolicLabel` and `diastolicLabel`:

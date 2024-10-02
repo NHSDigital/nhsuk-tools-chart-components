@@ -48,7 +48,7 @@ import { BmiChartMarkerIcon } from '@components/bmi/bmi-chart-marker-icon';
  */
 
 const meta: Meta<typeof ChartLegend> = {
-  title: 'Charts/Legend',
+  title: 'Legend',
   component: ChartLegend,
 };
 
