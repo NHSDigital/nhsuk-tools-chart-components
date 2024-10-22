@@ -1,11 +1,11 @@
 {
   "name": "nhsuk-tools-chart-components",
-  "version": "0.0.100",
+  "version": "1.0.0",
   "description": "",
   "exports": {
     "./react": {
+      "require": "./dist/react/cjs/index.js",
       "import": "./dist/react/esm/index.js",
-      "export": "./dist/react/cjs/index.js",
       "types": "./dist/react/index.d.ts"
     },
     "./package.json": "./package.json"
