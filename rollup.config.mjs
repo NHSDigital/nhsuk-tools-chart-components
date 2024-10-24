@@ -31,7 +31,7 @@ export default [
     input: 'src/index.ts',
     output: [
       {
-        file: 'dist/react/cjs/index.js',
+        file: 'dist/cjs/index.js',
         format: 'cjs',
         sourcemap: true,
       },
@@ -53,7 +53,7 @@ export default [
     input: 'src/index.ts',
     output: [
       {
-        dir: 'dist/react/esm',
+        dir: 'dist/esm',
         format: 'esm',
         sourcemap: true,
         preserveModules: true,
@@ -66,9 +66,9 @@ export default [
       typescript({
         compilerOptions: {
           declaration: true,
-          declarationDir: 'dist/react/esm',
+          declarationDir: 'dist/esm',
           emitDeclarationOnly: true,
-          outDir: 'dist/react/esm',
+          outDir: 'dist/esm',
         },
       }),
       preserveDirectives(),
@@ -79,7 +79,7 @@ export default [
   // type bundling
   {
     input: 'src/index.ts',
-    output: [{ file: 'dist/react/index.d.ts', format: 'esm' }],
+    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     external: [/\.css$/, /\.scss$/],
     plugins: [
       dts({

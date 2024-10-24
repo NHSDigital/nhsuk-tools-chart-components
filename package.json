@@ -1,15 +1,10 @@
 {
-  "name": "nhsuk-tools-chart-components",
+  "name": "nhsuk-tools-chart-components-react",
   "version": "1.0.0",
   "description": "",
-  "exports": {
-    "./react": {
-      "require": "./dist/react/cjs/index.js",
-      "import": "./dist/react/esm/index.js",
-      "types": "./dist/react/index.d.ts"
-    },
-    "./package.json": "./package.json"
-  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && rollup -c rollup.config.mjs",
     "build-storybook": "storybook build",
