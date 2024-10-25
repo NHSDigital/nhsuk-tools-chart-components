@@ -1,5 +1,5 @@
 import { BpChart } from '@components/blood-pressure/bp-chart';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import {
   BpGraphLayout,
@@ -30,10 +30,14 @@ const diastolicAxis = [
 ];
 
 const bptClassificationRegions = [
-  { name: 'classification-0', width: 25, height: 18.181818181818183 },
-  { name: 'classification-1', width: 50, height: 45.45454545454545 },
-  { name: 'classification-2', width: 62.5, height: 63.63636363636363 },
-  { name: 'classification-3', width: 100, height: 100 },
+  { name: 'classification-low', width: 25, height: 18.181818181818183 },
+  { name: 'classification-healthy', width: 50, height: 45.45454545454545 },
+  {
+    name: 'classification-slighthlyraised',
+    width: 62.5,
+    height: 63.63636363636363,
+  },
+  { name: 'classification-high', width: 100, height: 100 },
 ];
 
 const btpRegionBoundaries = [
@@ -147,15 +151,14 @@ describe('The Blood pressure result chart component', () => {
   it('Renders the chart classification regions', () => {
     const { container } = render(<ResultBpChartTestApp />);
 
-    bptClassificationRegions.forEach((region) => {
-      const regionEl = container?.querySelector(
-        `.nhsuk-bp-${region.name}`
-      ) as HTMLElement;
+    bptClassificationRegions.forEach(async (region) => {
+      await waitFor(() => {
+        const regionEl: HTMLElement = container.querySelector(`.nhsuk-bp-${region.name}`)!;
+        expect(regionEl).not.toBeNull();
 
-      expect(regionEl).not.toBeNull();
-
-      expect(regionEl.style.width).toBe(`${region.width}%`);
-      expect(regionEl.style.height).toBe(`${region.height}%`);
+        expect(regionEl.style.width).toBe(`${region.width}%`);
+        expect(regionEl.style.height).toBe(`${region.height}%`);
+      });
     });
   });
 
