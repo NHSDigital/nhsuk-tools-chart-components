@@ -12,28 +12,28 @@
   background: transparent;
 }
 
-.nhsuk-bp-classification-0 {
+.nhsuk-bp-classification-low {
   @extend %bp-classification-low;
   position: absolute;
   bottom: 0%;
   z-index: 3;
 }
 
-.nhsuk-bp-classification-1 {
+.nhsuk-bp-classification-healthy {
   @extend %bp-classification-healthy;
   position: absolute;
   bottom: 0%;
   z-index: 2;
 }
 
-.nhsuk-bp-classification-2 {
+.nhsuk-bp-classification-slightlyraised {
   @extend %bp-classification-slightlyraised;
   position: absolute;
   bottom: 0%;
   z-index: 1;
 }
 
-.nhsuk-bp-classification-3 {
+.nhsuk-bp-classification-high {
   @extend %bp-classification-high;
   position: absolute;
   bottom: 0%;
