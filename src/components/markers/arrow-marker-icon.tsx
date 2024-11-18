@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function ChildBmiChartMarkerIcon(): JSX.Element {
+export function ArrowMarkerIcon(): JSX.Element {
   return (
     <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path

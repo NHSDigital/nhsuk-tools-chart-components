@@ -1,6 +1,8 @@
 @use 'sass:map';
 @import 'nhsuk-frontend/packages/core/settings/_breakpoints.scss';
 
+$marker-axis-offset: 5px;
+
 @mixin up-to-width($width) {
   @media (max-width: $width) {
     @content;
@@ -22,5 +24,34 @@
 @mixin up-to-tablet {
   @media (max-width: map-get($mq-breakpoints, tablet)) {
     @content;
+  }
+}
+
+@mixin arrow-marker-size($size) {
+  height: $size;
+  width: $size;
+  margin: -9px 0 calc(-1 * ($size) / 2) calc(-1 * ($size) / 2);
+}
+
+@mixin arrow-marker($sizes) {
+  @include arrow-marker-size(map-get($sizes, 'default'));
+  @include for-mobile {
+    @include arrow-marker-size(map-get($sizes, 'mobile'));
+  }
+}
+
+@mixin axis-marker-size($size) {
+  height: $size + $marker-axis-offset;
+}
+
+@mixin axis-marker($sizes) {
+  position: absolute;
+  bottom: -5px;
+  margin-left: -0.5px;
+  box-shadow: 0px 0px white inset, 1px 0px white, -1px 0px white;
+  z-index: 4;
+  @include axis-marker-size(map-get($sizes, 'default'));
+  @include for-mobile {
+    @include axis-marker-size(map-get($sizes, 'mobile'));
   }
 }
