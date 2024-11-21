@@ -2,7 +2,7 @@
 
 This repository contains the code for NHS.UK Chart components
 
-These chart components are designed for visualizing Body Mass Index (BMI), Child Body Mass Index (CBMI), and Blood Pressure (BP) data.
+These chart components are designed for visualizing Body Mass Index (BMI), Child Body Mass Index (CBMI), Blood Pressure (BP) and Waist to Height (WHTR) data.
 
 Initially, these charts were integrated into separate codebases for each of the individual tools. To support consistency and reusability across NHS projects, we have migrated these chart components into a dedicated library.
 
@@ -21,3 +21,9 @@ Ensure you have Node.js 20.x.x. installed. Usage of NVM is recommended, to allow
 ## Build storybook
 
 `npm run storybook` will build and deploy the storybook locally in `http://localhost:6006/`
+
+# Import the compiled CSS
+
+Before using the components, import the compiled CSS file from your project's build directory:
+
+`@import 'node_modules/nhsuk-tools-chart-components-react/dist/esm/bundle.css';`

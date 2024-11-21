@@ -1,0 +1,13 @@
+@import '../../styles/mixins.module.scss';
+@import './whtr-chart.config.module.scss';
+
+.nhsuk-whtr-graph {
+  position: relative;
+  outline: $whtr-graph-outline;
+  margin-top: 20px;
+  display: flex;
+  height: $whtr-graph-height-desktop;
+  @include for-mobile {
+    height: $whtr-graph-height-mobile;
+  }
+}

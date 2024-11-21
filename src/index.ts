@@ -16,6 +16,12 @@ export type { BpChartProps } from '@components/blood-pressure/bp-chart';
 export { BpChartFigure } from '@components/blood-pressure/bp-figure-chart';
 export type { BpChartFigureProps } from '@components/blood-pressure/bp-figure-chart';
 
+export { WhtrChart } from '@components/whtr/whtr-chart';
+export type { WhtrChartProps } from '@components/whtr/whtr-chart';
+
+export { WhtrChartFigure } from '@components/whtr/whtr-figure-chart';
+export type { WhtrChartFigureProps } from '@components/whtr/whtr-figure-chart';
+
 export { ChartLegend } from '@components/chart-legend';
 export type {
   ChartLegendProps,

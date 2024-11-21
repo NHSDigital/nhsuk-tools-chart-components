@@ -1,0 +1,32 @@
+$whtr-graph-height-desktop: 28px;
+$whtr-graph-height-mobile: 24px;
+
+$whtr-graph-outline: 1px solid black;
+
+$whtr-low-color: #00a499;
+$whtr-increased-color: #ffb81c;
+$whtr-high-color: #db3832;
+
+%whtr-classification-increased {
+  background: $whtr-increased-color;
+}
+
+%whtr-classification-high {
+  background: repeating-linear-gradient(
+    -45deg,
+    $whtr-high-color,
+    #db3832 4.5px,
+    #d76662 4.5px,
+    #d76662 9px
+  );
+}
+
+%whtr-classification-low {
+  background: repeating-linear-gradient(
+    45deg,
+    $whtr-low-color,
+    #00a499 4.5px,
+    #02beb1 4.5px,
+    #02beb1 9px
+  );
+}
