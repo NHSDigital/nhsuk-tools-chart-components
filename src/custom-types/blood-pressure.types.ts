@@ -1,9 +1,9 @@
 export const BpClassificationLevel = {
-  Low: '0',
-  Healthy: '1',
-  SlightlyRaised: '2',
-  High: '3',
-  VeryHigh: '4',
+  Low: 'low',
+  Healthy: 'healthy',
+  SlightlyRaised: 'slightlyRaised',
+  High: 'high',
+  VeryHigh: 'veryHigh',
 } as const;
 
 export type BpClassificationLevelType =

@@ -154,19 +154,19 @@ exports[`The Blood pressure chart figure component Renders with the expected con
           </svg>
         </div>
         <div
-          class="nhsuk-bp-classification-0"
+          class="nhsuk-bp-classification-low"
           style="width: 25%; height: 18.181818181818183%;"
         />
         <div
-          class="nhsuk-bp-classification-1"
+          class="nhsuk-bp-classification-healthy"
           style="width: 50%; height: 45.45454545454545%;"
         />
         <div
-          class="nhsuk-bp-classification-2"
+          class="nhsuk-bp-classification-slightlyraised"
           style="width: 62.5%; height: 63.63636363636363%;"
         />
         <div
-          class="nhsuk-bp-classification-3"
+          class="nhsuk-bp-classification-high"
           style="width: 100%; height: 100%;"
         />
         <div

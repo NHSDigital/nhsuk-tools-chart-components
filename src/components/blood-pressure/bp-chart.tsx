@@ -55,9 +55,9 @@ export function BpChart({
           systolicReading={systolic}
           diastolicReading={diastolic}
           systolicLowerBound={bounds.systolic.lower}
-          systolicUpperBound={bounds.systolic.upper[3].value!}
+          systolicUpperBound={bounds.systolic.upper.high.value!}
           diastolicLowerBound={bounds.diastolic.lower}
-          diastolicUpperBound={bounds.diastolic.upper[3].value!}
+          diastolicUpperBound={bounds.diastolic.upper.high.value!}
         />
         <BpGraphRegions bounds={bounds} />
         {graphLayout.rows.map((rowConfig) => (

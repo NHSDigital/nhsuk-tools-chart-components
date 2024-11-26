@@ -1,0 +1,30 @@
+@import '../../styles/mixins.module.scss';
+@import './whtr-chart.config.module.scss';
+
+%whtr-region {
+  position: absolute;
+  bottom: 0%;
+  outline: $whtr-graph-outline;
+  height: $whtr-graph-height-desktop;
+
+  @include for-mobile {
+    height: $whtr-graph-height-mobile;
+  }
+}
+.nhsuk-whtr-classification-low {
+  @extend %whtr-region;
+  @extend %whtr-classification-low;
+  z-index: 3;
+}
+
+.nhsuk-whtr-classification-increased {
+  @extend %whtr-region;
+  @extend %whtr-classification-increased;
+  z-index: 2;
+}
+
+.nhsuk-whtr-classification-high {
+  @extend %whtr-region;
+  @extend %whtr-classification-high;
+  z-index: 1;
+}

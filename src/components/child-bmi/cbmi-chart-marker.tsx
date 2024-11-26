@@ -1,7 +1,7 @@
 import { ChildBmiResultChart } from '@models/cbmi-chart.model';
 import React, { JSX } from 'react';
 import { CentileValue } from '@custom-types/bmi.types';
-import { ChildBmiChartMarkerIcon } from './cbmi-chart-marker-icon';
+import { ArrowMarkerIcon } from '@components/markers/arrow-marker-icon';
 import './styles/cbmi-chart-marker.module.scss';
 
 /**
@@ -60,7 +60,7 @@ export function ChildBmiChartMarker({
         className="nhsuk-cbmi-chart-arrow-marker"
         style={{ left: `${roundedOffset}%` }}>
         <ChildBmiChartMarkerText centile={centile} markerText={markerText} />
-        <ChildBmiChartMarkerIcon />
+        <ArrowMarkerIcon />
       </div>
       <div
         className="nhsuk-cbmi-chart-axis-marker"

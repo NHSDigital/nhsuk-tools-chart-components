@@ -18,7 +18,7 @@ function getClassificationBoundaryPercentage(
   classification: BpClassificationLevelType
 ): number {
   const normalisedBound = upperBounds[classification].value! - lowerBound;
-  const normalisedUpperBound = upperBounds[3].value! - lowerBound;
+  const normalisedUpperBound = upperBounds.high.value! - lowerBound;
 
   return (normalisedBound / normalisedUpperBound) * 100;
 }

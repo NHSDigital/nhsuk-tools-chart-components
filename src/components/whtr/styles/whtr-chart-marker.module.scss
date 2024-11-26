@@ -1,33 +1,33 @@
 @import '../../styles/mixins.module.scss';
-@import './cbmi-chart.config.module.scss';
+@import './whtr-chart.config.module.scss';
 
-$cbmi_marker_sizes: (
+$whtr-marker-sizes: (
   'default': 16px,
   'mobile': 12px,
 );
 
-.nhsuk-cbmi-chart-arrow-marker {
+.nhsuk-whtr-chart-arrow-marker {
   position: absolute;
   z-index: 4;
-  @include arrow-marker($cbmi_marker_sizes);
+  @include arrow-marker($whtr-marker-sizes);
 }
 
-.nhsuk-cbmi-chart-label-align-left {
+.nhsuk-whtr-chart-label-align-left {
   display: flex;
   justify-content: left;
 }
 
-.nhsuk-cbmi-chart-label-align-center {
+.nhsuk-whtr-chart-label-align-center {
   display: flex;
   justify-content: center;
 }
 
-.nhsuk-cbmi-chart-label-align-right {
+.nhsuk-whtr-chart-label-align-right {
   display: flex;
   justify-content: right;
 }
 
-.nhsuk-cbmi-chart-label-marker {
+.nhsuk-whtr-chart-label-marker {
   position: relative;
   height: 25;
   width: auto;
@@ -36,20 +36,21 @@ $cbmi_marker_sizes: (
   z-index: 4;
 }
 
-.nhsuk-cbmi-chart-centile-marker {
+.nhsuk-whtr-chart-ratio-marker {
   position: relative;
   font-weight: bold;
   margin-left: 5px;
+  margin-right: 2px;
 }
 
-.nhsuk-cbmi-chart-axis-marker {
+.nhsuk-whtr-chart-axis-marker {
   position: absolute;
   margin-left: -1px;
   border: 1.5px solid black;
   box-shadow: 0px 0px white inset, 2px 0px white, -2px 0px white;
   z-index: 4;
-  height: $cbmi-graph-height-desktop;
+  height: $whtr-graph-height-desktop;
   @include for-mobile {
-    height: $cbmi-graph-height-mobile;
+    height: $whtr-graph-height-mobile;
   }
 }
