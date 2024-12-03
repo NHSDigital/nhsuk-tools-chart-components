@@ -1,3 +1,5 @@
+import { WeightedBounds } from './threshold.types';
+
 export type ChartRegion = {
   name: string;
   size: number;
@@ -18,3 +20,5 @@ export interface HorizontalBarChartBounds<T extends string> {
   lowerBound: number;
   upperBounds: Record<T, number>;
 }
+
+export type BarClassificationBounds<T extends string> = WeightedBounds<T>;
