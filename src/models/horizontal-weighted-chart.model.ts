@@ -1,28 +1,32 @@
-import {
-  ChartSegment,
-  HorizontalBarChartBounds as HorizontalWeightBarBounds,
-} from '@custom-types/chart.types';
+import { ChartSegment } from '@custom-types/chart.types';
 import { WeightedBounds } from '@custom-types/threshold.types';
-import {
-  convertToChartSegments,
-  convertToHorizontalBarChartBounds,
-} from '@utils/horizontal-bar-transformer.utils';
+import { convertToChartSegments } from '@utils/horizontal-bar-transformer.utils';
 
 export class HorizontalWeightedBarChart<T extends string> {
-  readonly bounds: HorizontalWeightBarBounds<T>;
-
   protected segments: ChartSegment[];
+
+  protected classificationBounds: WeightedBounds<T>;
 
   protected chartWidth: number;
 
   constructor(classificationBounds: WeightedBounds<T>, width: number) {
     this.chartWidth = width;
+    this.classificationBounds = classificationBounds;
     this.segments = convertToChartSegments(classificationBounds);
-    this.bounds = convertToHorizontalBarChartBounds(classificationBounds);
   }
 
   classificationPosition(classification: T): number {
-    return this.calculatePosition(this.bounds.upperBounds[classification]);
+    return this.calculatePosition(
+      this.classificationBounds.upper[classification].value
+    );
+  }
+
+  classificationValue(classification: T): number {
+    return this.classificationBounds.upper[classification].value;
+  }
+
+  lowerBounds(): number {
+    return this.classificationBounds.lower;
   }
 
   /**

@@ -12,5 +12,9 @@
   },
   "eslint.alwaysShowStatus": true,
   "eslint.workingDirectories": ["src"],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "sonarlint.connectedMode.project": {
+    "connectionId": "nhsdigital",
+    "projectKey": "NHSDigital_nhsuk-tools-chart-components"
+  }
 }

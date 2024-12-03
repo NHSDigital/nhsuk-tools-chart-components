@@ -44,19 +44,19 @@ export function WhtrChartAxes({
   return (
     <>
       <AxisMarker
-        markerText={model.bounds.lowerBound.toString()}
-        offsetPercent={model.calculatePosition(model.bounds.lowerBound)}
+        markerText={model.lowerBounds().toString()}
+        offsetPercent={model.calculatePosition(model.lowerBounds())}
       />
       <AxisMarker
-        markerText={model.bounds.upperBounds[
-          RiskClassifications.Low
-        ].toString()}
+        markerText={model
+          .classificationValue(RiskClassifications.Low)
+          .toString()}
         offsetPercent={model.classificationPosition(RiskClassifications.Low)}
       />
       <AxisMarker
-        markerText={model.bounds.upperBounds[
-          RiskClassifications.Increased
-        ].toString()}
+        markerText={model
+          .classificationValue(RiskClassifications.Increased)
+          .toString()}
         offsetPercent={model.classificationPosition(
           RiskClassifications.Increased
         )}

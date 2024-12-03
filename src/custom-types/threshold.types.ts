@@ -1,5 +1,4 @@
 export type UpperBoundInequalityMethod = (a: number, b: number) => boolean;
-
 export type UpperBoundValue = {
   value?: number;
   label?: string;
@@ -18,7 +17,7 @@ export type Bounds<TClassificationLevel extends string> = {
 export type WeightedUpperBoundValue = {
   value: number;
   weight: number;
-  label?: string;
+  className?: string;
 };
 
 export type WeightedUpperBounds<TClassificationLevel extends string> = {

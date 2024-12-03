@@ -1,0 +1,56 @@
+@import '../../styles/mixins.module.scss';
+@import './bar-slider-chart.config.module.scss';
+
+$bar-slider-marker-sizes: (
+  'default': 16px,
+  'mobile': 12px,
+);
+
+.nhsuk-bar-slider-arrow-marker {
+  position: absolute;
+  z-index: 10;
+  @include arrow-marker($bar-slider-marker-sizes);
+}
+
+.nhsuk-bar-slider-label-align-left {
+  display: flex;
+  justify-content: left;
+}
+
+.nhsuk-bar-slider-label-align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.nhsuk-bar-slider-label-align-right {
+  display: flex;
+  justify-content: right;
+}
+
+.nhsuk-bar-slider-label-marker {
+  position: relative;
+  height: 25px;
+  width: auto;
+  white-space: nowrap;
+  margin-top: -30px;
+  z-index: 10;
+}
+
+.nhsuk-bar-slider-value-marker {
+  position: relative;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+.nhsuk-bar-slider-value-axis-marker {
+  position: absolute;
+  margin-left: -1px;
+  border: 1.5px solid black;
+  box-shadow: 0px 0px white inset, 2px 0px white, -2px 0px white;
+  z-index: 10;
+  height: $bar-slider-graph-height-desktop;
+  @include for-mobile {
+    height: $bar-slider-graph-height-mobile;
+  }
+}

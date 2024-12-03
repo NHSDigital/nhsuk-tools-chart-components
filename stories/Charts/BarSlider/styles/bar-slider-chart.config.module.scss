@@ -1,0 +1,26 @@
+$bar-slider-graph-height-desktop: 28px;
+$bar-slider-graph-height-mobile: 24px;
+
+$bar-slider-graph-outline: 1px solid black;
+
+$bar-slider-cyan: #00a499;
+$bar-slider-yellow: #ffb81c;
+$bar-slider-red: #db3832;
+$bar-slider-purple: #5132db;
+$bar-slider-green: #22ab29;
+
+%bar-slider-cyan {
+  background: $bar-slider-cyan;
+}
+%bar-slider-yellow {
+  background: $bar-slider-yellow;
+}
+%bar-slider-red {
+  background: $bar-slider-red;
+}
+%bar-slider-purple {
+  background: $bar-slider-purple;
+}
+%bar-slider-green {
+  background: $bar-slider-green;
+}
