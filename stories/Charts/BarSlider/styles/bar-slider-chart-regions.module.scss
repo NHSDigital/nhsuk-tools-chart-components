@@ -1,0 +1,49 @@
+@use 'sass:map';
+@import './bar-slider-chart.config.module.scss';
+
+@mixin for-mobile {
+  @media (min-width: map-get($mq-breakpoints, mobile)) and (max-width: map-get($mq-breakpoints, tablet)) {
+    @content;
+  }
+}
+
+%nhsuk-bar-slider-region {
+  position: absolute;
+  bottom: 0%;
+  outline: $bar-slider-graph-outline;
+  height: $bar-slider-graph-height-desktop;
+
+  @include for-mobile {
+    height: $bar-slider-graph-height-mobile;
+  }
+}
+
+.nhsuk-bar-slider-cyan {
+  @extend %nhsuk-bar-slider-region;
+  @extend %bar-slider-cyan;
+  z-index: 4;
+}
+
+.nhsuk-bar-slider-yellow {
+  @extend %nhsuk-bar-slider-region;
+  @extend %bar-slider-yellow;
+  z-index: 3;
+}
+
+.nhsuk-bar-slider-red {
+  @extend %nhsuk-bar-slider-region;
+  @extend %bar-slider-red;
+  z-index: 2;
+}
+
+.nhsuk-bar-slider-purple {
+  @extend %nhsuk-bar-slider-region;
+  @extend %bar-slider-purple;
+  z-index: 1;
+}
+
+.nhsuk-bar-slider-green {
+  @extend %nhsuk-bar-slider-region;
+  @extend %bar-slider-green;
+  z-index: 0;
+}

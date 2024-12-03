@@ -20,9 +20,8 @@
 @import '../blood-pressure/styles/bp-chart-marker.module.scss';
 @import '../blood-pressure/styles/bp-chart-region-boundaries.module.scss';
 
-@import '../whtr/styles/whtr-chart.module.scss';
-@import '../whtr/styles/whtr-chart.config.module.scss';
-@import '../whtr/styles/whtr-chart-axes.module.scss';
-@import '../whtr/styles/whtr-chart-card.module.scss';
-@import '../whtr/styles/whtr-chart-marker.module.scss';
-@import '../whtr/styles/whtr-chart-regions.module.scss';
+@import '../bar-slider/styles/bar-slider-chart.module.scss';
+@import '../bar-slider/styles/bar-slider-chart.config.module.scss';
+@import '../bar-slider/styles/bar-slider-chart-axis.module.scss';
+@import '../bar-slider/styles/bar-slider-chart-marker.module.scss';
+@import '../bar-slider/styles/bar-slider-chart-regions.module.scss';

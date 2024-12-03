@@ -1,5 +1,8 @@
 // Allow current nhsuk styles to override legacy
 @import '../node_modules/nhsuk-frontend/packages/nhsuk.scss';
+@import '../stories/Charts/BarSlider/styles/bar-slider-chart-regions.module.scss';
+@import '../stories/Charts/BarSlider/styles/bar-slider-chart.config.module.scss';
+@import '../stories/Charts/BarSlider/styles/bar-slider-chart-card.module.scss';
 
 .tag-wrapper {
   display: flex;

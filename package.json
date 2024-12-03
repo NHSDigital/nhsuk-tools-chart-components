@@ -1,6 +1,6 @@
 {
   "name": "nhsuk-tools-chart-components-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -24,7 +24,7 @@
     "url": "git+https://github.com/NHSDigital/nhsuk-tools-chart-components.git"
   },
   "author": {
-       "name": "NHS England"
+    "name": "NHS England"
   },
   "license": "MIT",
   "devDependencies": {
@@ -43,6 +43,7 @@
     "@storybook/blocks": "^8.0.5",
     "@storybook/manager-api": "^8.0.5",
     "@storybook/preview-api": "^8.0.5",
+    "@storybook/react": "^8.0.5",
     "@storybook/react-vite": "^8.0.5",
     "@storybook/test": "^8.3.2",
     "@storybook/theming": "^8.0.5",
@@ -67,7 +68,6 @@
     "jest-environment-jsdom": "^29.3.1",
     "jest-junit": "^14.0.1",
     "jest-sonar-reporter": "^2.0.0",
-    "@storybook/react": "^8.0.5",
     "lint-staged": "^13.1.0",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
