@@ -1,0 +1,13 @@
+@import '../../styles/mixins.module.scss';
+@import './bar-slider-chart.config.module.scss';
+
+.nhsuk-bar-slider-graph {
+  position: relative;
+  outline: $bar-slider-graph-outline;
+  margin-top: 20px;
+  display: flex;
+  height: $bar-slider-graph-height-desktop;
+  @include for-mobile {
+    height: $bar-slider-graph-height-mobile;
+  }
+}

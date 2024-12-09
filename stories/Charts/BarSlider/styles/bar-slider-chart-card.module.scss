@@ -1,0 +1,37 @@
+@import './bar-slider-chart.config.module.scss';
+
+.nhsuk-bar-slider-legend-key-cyan {
+  @extend %bar-slider-cyan;
+  @extend .nhsuk-bar-slider-legend-key;
+}
+
+.nhsuk-bar-slider-legend-key-yellow {
+  @extend %bar-slider-yellow;
+  @extend .nhsuk-bar-slider-legend-key;
+}
+
+.nhsuk-bar-slider-legend-key-red {
+  @extend %bar-slider-red;
+  @extend .nhsuk-bar-slider-legend-key;
+}
+
+.nhsuk-bar-slider-legend-key-purple {
+  @extend %bar-slider-purple;
+  @extend .nhsuk-bar-slider-legend-key;
+}
+
+.nhsuk-bar-slider-legend-green {
+  @extend %bar-slider-green;
+  @extend .nhsuk-bar-slider-legend-key;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.nhsuk-bar-slider-legend-key {
+  border-bottom: 2px solid white;
+  margin-bottom: 2px;
+}
+
+.nhsuk-bar-slider-legend-marker {
+  margin-bottom: 2px;
+}
