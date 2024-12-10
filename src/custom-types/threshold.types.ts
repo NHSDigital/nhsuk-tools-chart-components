@@ -1,5 +1,4 @@
 export type UpperBoundInequalityMethod = (a: number, b: number) => boolean;
-
 export type UpperBoundValue = {
   value?: number;
   label?: string;

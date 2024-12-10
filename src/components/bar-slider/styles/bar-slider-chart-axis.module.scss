@@ -1,0 +1,34 @@
+@import './bar-slider-chart.config.module.scss';
+@import '../../styles/mixins.module.scss';
+
+$bar_slider_axis_sizes: (
+  'default': $bar-slider-graph-height-desktop,
+  'mobile': $bar-slider-graph-height-mobile,
+);
+
+.nhsuk-bar-slider-start-axis-marker {
+  border: 1px solid black;
+  @include axis-marker($bar_slider_axis_sizes);
+}
+
+.nhsuk-bar-slider-axis-marker {
+  border: 1px solid black;
+  @include axis-marker($bar_slider_axis_sizes);
+}
+
+.nhsuk-bar-slider-start-axis-marker-label {
+  position: absolute;
+  bottom: -25px;
+  left: -2px;
+}
+
+.nhsuk-bar-slider-axis-marker-label {
+  position: absolute;
+  bottom: -25px;
+  left: -10px;
+}
+
+.nhsuk-bar-slider-value-axis-marker {
+  position: absolute;
+  @include result-marker($bar_slider_axis_sizes);
+}

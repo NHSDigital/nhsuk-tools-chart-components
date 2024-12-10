@@ -49,9 +49,25 @@ $marker-axis-offset: 5px;
   bottom: -5px;
   margin-left: -0.5px;
   box-shadow: 0px 0px white inset, 1px 0px white, -1px 0px white;
-  z-index: 4;
+  z-index: 100;
   @include axis-marker-size(map-get($sizes, 'default'));
   @include for-mobile {
     @include axis-marker-size(map-get($sizes, 'mobile'));
+  }
+}
+
+@mixin result-marker-size($size) {
+  height: $size;
+}
+
+@mixin result-marker($sizes) {
+  position: absolute;
+  margin-left: -1px;
+  border: 1.5px solid black;
+  box-shadow: 0px 0px white inset, 2px 0px white, -2px 0px white;
+  z-index: 100;
+  @include result-marker-size(map-get($sizes, 'default'));
+  @include for-mobile {
+    @include result-marker-size(map-get($sizes, 'mobile'));
   }
 }
