@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Bar slider chart component Renders with the expected content 1`] = `
+<div>
+  <div
+    aria-hidden="true"
+    class="nhsuk-bar-slider-graph nhsuk-u-margin-bottom-9"
+  >
+    <div
+      class="nhsuk-bar-slider-axis-marker"
+      style="left: 10%;"
+    >
+      <div
+        class="nhsuk-font-size-16 nhsuk-u-secondary-text-color nhsuk-bar-slider-axis-marker-label"
+      >
+        10
+      </div>
+    </div>
+    <div
+      class="nhsuk-bar-slider-axis-marker"
+      style="left: 40%;"
+    >
+      <div
+        class="nhsuk-font-size-16 nhsuk-u-secondary-text-color nhsuk-bar-slider-axis-marker-label"
+      >
+        40
+      </div>
+    </div>
+    <div
+      class="nhsuk-bar-slider-axis-marker"
+      style="left: 60%;"
+    >
+      <div
+        class="nhsuk-font-size-16 nhsuk-u-secondary-text-color nhsuk-bar-slider-axis-marker-label"
+      >
+        60
+      </div>
+    </div>
+    <div
+      class="nhsuk-bar-slider-axis-marker"
+      style="left: 90%;"
+    >
+      <div
+        class="nhsuk-font-size-16 nhsuk-u-secondary-text-color nhsuk-bar-slider-axis-marker-label"
+      >
+        90
+      </div>
+    </div>
+    <div
+      class="nhsuk-bar-slider-arrow-marker"
+      style="left: 15.9%;"
+    >
+      <div
+        class="nhsuk-bar-slider-label-marker"
+      >
+        <div
+          class="nhsuk-font-size-16 nhsuk-bar-slider-label-align-left"
+        >
+          Your Result:
+          <span
+            class="nhsuk-bar-slider-value-marker"
+          >
+            15.9
+          </span>
+        </div>
+      </div>
+      <svg
+        fill="none"
+        viewBox="0 0 12 12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+          fill="black"
+        />
+      </svg>
+    </div>
+    <div
+      class="nhsuk-bar-slider-value-axis-marker"
+      style="left: 15.9%;"
+    />
+    <div
+      class="nhsuk-bar-slider-mock-style-1"
+      style="width: 10%;"
+    />
+    <div
+      class="nhsuk-bar-slider-mock-style-2"
+      style="width: 40%;"
+    />
+    <div
+      class="nhsuk-bar-slider-mock-style-3"
+      style="width: 60%;"
+    />
+    <div
+      class="nhsuk-bar-slider-mock-style-4"
+      style="width: 90%;"
+    />
+    <div
+      class="nhsuk-bar-slider-mock-style-5"
+      style="width: 100%;"
+    />
+  </div>
+</div>
+`;

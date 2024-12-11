@@ -1,0 +1,42 @@
+@import '../../styles/mixins.module.scss';
+@import './bar-slider-chart.config.module.scss';
+
+$bar-slider-marker-sizes: (
+  'default': 16px,
+  'mobile': 12px,
+);
+
+.nhsuk-bar-slider-arrow-marker {
+  position: absolute;
+  @include arrow-marker($bar-slider-marker-sizes);
+}
+
+.nhsuk-bar-slider-label-align-left {
+  display: flex;
+  justify-content: left;
+}
+
+.nhsuk-bar-slider-label-align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.nhsuk-bar-slider-label-align-right {
+  display: flex;
+  justify-content: right;
+}
+
+.nhsuk-bar-slider-label-marker {
+  position: relative;
+  height: 25px;
+  width: auto;
+  white-space: nowrap;
+  margin-top: -30px;
+}
+
+.nhsuk-bar-slider-value-marker {
+  position: relative;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 2px;
+}

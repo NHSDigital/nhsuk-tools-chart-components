@@ -1,0 +1,12 @@
+@import '../../styles/mixins.module.scss';
+@import './bar-slider-chart.config.module.scss';
+
+%bar-slider-region {
+  position: absolute;
+  bottom: 0%;
+  outline: $bar-slider-graph-outline;
+  height: $bar-slider-graph-height-desktop;
+  @include for-mobile {
+    height: $bar-slider-graph-height-mobile;
+  }
+}
